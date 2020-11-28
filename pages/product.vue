@@ -1,5 +1,5 @@
 <template>
-  <div><Orta /><Kopru /></div>
+  <div><Orta /><Newkopru /></div>
 </template>
 
 <script>

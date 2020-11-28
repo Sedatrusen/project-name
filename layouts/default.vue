@@ -2,7 +2,7 @@
   <div>
     <div>
       <Navbar />
-      <Menu />
+      <Newmenu />
     </div>
     <Nuxt />
   </div>
