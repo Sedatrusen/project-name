@@ -13,9 +13,9 @@
         <b-dropdown-item-button aria-describedby="dropdown-header-label">
           <img src="../assets/menuwow.svg" /> World of Warcraft
         </b-dropdown-item-button>
-        <b-dropdown-item-button to="productpage">
+        <b-dropdown-item to="productpage">
           <img src="../assets/menuow.svg" /> Overwatch
-        </b-dropdown-item-button>
+        </b-dropdown-item>
         <b-dropdown-item-button aria-describedby="dropdown-header-label">
           <img src="../assets/menudiablo3.svg" />Diablo III
         </b-dropdown-item-button>
@@ -128,6 +128,15 @@ export default {}
   border: none;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
+}
+.dparka ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+}
+.dparka ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: inherit;
 }
 
 .dparka ul li button {

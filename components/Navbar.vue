@@ -58,8 +58,22 @@
       <ul>
         <li>
           <router-link to="/"> Support </router-link>
-
-          <nuxt-link to="login"> My Account </nuxt-link>
+          <b-dropdown
+            class="m-2 myaccount"
+            toggle-class="myaccount"
+            offset="-175px"
+            text="My Account"
+          >
+            <b-dropdown-item to="/login">Login</b-dropdown-item>
+            <b-dropdown-item class="m-2" to="/login"
+              ><b-icon class="navbaricon" icon="gear"></b-icon>Account
+              Settings</b-dropdown-item
+            >
+            <b-dropdown-item class="m-2" to="/newaccount"
+              ><b-icon class="navbaricon" icon="person-plus"></b-icon>Create a
+              Free Account</b-dropdown-item
+            >
+          </b-dropdown>
         </li>
       </ul>
     </div>
@@ -111,5 +125,42 @@ a {
 
 li {
   margin: 5px;
+}
+</style>
+<style>
+.myaccount {
+  background: inherit;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.myaccount:hover {
+  background: inherit;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.myaccount ul {
+  background: radial-gradient(
+    ellipse farthest-side at center top,
+    #283244 0,
+    rgba(21, 26, 35, 0.95) 100%
+  );
+  text-align: center;
+  color: white;
+}
+
+.myaccount ul li:first-child {
+  color: white;
+  background-color: #006fb2;
+  width: 20rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.myaccount ul li a {
+  color: white;
+}
+.navbaricon {
+  color: #00aeff;
+  margin-right: 1rem;
 }
 </style>
