@@ -7,7 +7,7 @@
       <button class="button">{{ buton }}</button>
     </div>
     <div class="butonlar">
-      <button @click="orta1()"></button>
+      <button focused @click="orta1()"></button>
       <button @click="orta2()"></button>
       <button @click="orta3"></button>
       <button @click="orta4"></button>
@@ -35,7 +35,7 @@ export default {
     },
     orta2() {
       this.image = require('../assets/ortawow1.jpg')
-      this.image2 = require('../assets/ortawow2.png')
+      this.image2 = require('../assets/ortawow1.jpg')
       this.parca = 'PURCHASE AND GET THE XRK WEAPONS PACK AT LAUNCH'
       this.buton = 'Pre-Purchase'
     },

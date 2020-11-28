@@ -1,6 +1,6 @@
 <template>
   <div class="arka">
-    <Orta />
+    <Corrosuel />
     <Kucukorta />
     <h1>Recommended</h1>
     <Kutular />
