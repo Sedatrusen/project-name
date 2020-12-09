@@ -5,7 +5,7 @@
         v-for="item in items"
         :key="item.id"
         :style="{ backgroundImage: 'url(' + item.arkafon + ')' }"
-        :to="item.router"
+        :to="{ name: 'productpages-id', params: { id: item.router } }"
       >
         <img class="kucuk-simge" :src="item.simge" alt />
         <h1 class="rec-yazi">{{ item.yazi1 }}</h1>
@@ -23,7 +23,7 @@ export default {
       items: [
         {
           id: 1,
-          router: '/',
+          router: 'CallofDuty:MW',
           arkafon: require('../assets/kutularcod1.jpg'),
           simge: require('../assets/kutularcod2.svg'),
           yazi1: 'Call of Duty®: Warzone',
@@ -33,7 +33,7 @@ export default {
         },
         {
           id: 1,
-          router: '/',
+          router: 'WorldofWarcraft',
           arkafon: require('../assets/kutularwow1.jpg'),
           simge: require('../assets/kutularwow2.svg'),
           yazi1: 'World of Warcraft®: Shadowlands',
@@ -44,7 +44,7 @@ export default {
 
         {
           id: 1,
-          router: '/',
+          router: 'WorldofWarcraft',
           arkafon: require('../assets/kutularclassic1.jpg'),
           simge: require('../assets/kutularclassic2.svg'),
           yazi1: 'World of Warcraft®',
@@ -54,7 +54,7 @@ export default {
         },
         {
           id: 1,
-          router: '/',
+          router: 'Hearthstone',
           arkafon: require('../assets/kutularac1.jpg'),
           simge: require('../assets/kutularac2.svg'),
           yazi1: 'Scholomance Academy',
@@ -64,7 +64,7 @@ export default {
         },
         {
           id: 1,
-          router: '/',
+          router: 'CallofDuty:MW',
           arkafon: require('../assets/kutularmw1.jpg'),
           simge: require('../assets/kutularmw2.svg'),
           yazi1: 'Call of Duty®: Modern Warfare® - Battle Pass Edition',
@@ -74,7 +74,7 @@ export default {
         },
         {
           id: 1,
-          router: '/',
+          router: 'Hearthstone',
           arkafon: require('../assets/kutularhs1.jpg'),
           simge: require('../assets/kutularhs2.svg'),
           yazi1: 'Hearthstone®',
@@ -84,7 +84,7 @@ export default {
         },
         {
           id: 1,
-          router: 'productpage',
+          router: 'Overwatch',
           arkafon: require('../assets/kutularow1.jpg'),
           simge: require('../assets/kutularow2.svg'),
           yazi1: 'Overwatch®: Legendary Edition',
@@ -94,7 +94,7 @@ export default {
         },
         {
           id: 1,
-          router: '/',
+          router: 'StarCraftII',
           arkafon: require('../assets/kutularsc1.jpg'),
           simge: require('../assets/kutularsc2.svg'),
           yazi1: 'StarCraft® II: Campaign Collection',
@@ -104,7 +104,7 @@ export default {
         },
         {
           id: 1,
-          router: '/',
+          router: 'StarCraft',
           arkafon: require('../assets/kutularhots1.jpg'),
           simge: require('../assets/kutularhots2.svg'),
           yazi1: 'Heroes of the Storm™',
@@ -114,7 +114,7 @@ export default {
         },
         {
           id: 1,
-          router: '/',
+          router: 'DiabloII',
           arkafon: require('../assets/kutulard31.jpg'),
           simge: require('../assets/kutulard32.svg'),
           yazi1: 'Diablo® III: Eternal Collection',

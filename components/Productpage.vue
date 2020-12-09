@@ -1,26 +1,31 @@
 <template>
-  <div class="productarkafon">
+  <div
+    class="productarkafon"
+    :style="{ backgroundImage: 'url(' + product.arkafon + ')' }"
+  >
     <div class="productcontanier">
       <div class="productlist">
-        <img id="owlogo" src="../assets/overwatchlogo.png" alt="" />
+        <img id="owlogo" :src="product.logo" alt="" />
         <ul class="producttable">
           <li>
-            <img id="owicon" src="../assets/overwatchicon.svg" alt="" />
-            <h1>Overwatch®: Legendary</h1>
-            <p id="details">Team-Based Shooter</p>
+            <img id="owicon" :src="product.icon" alt="" />
+            <h1>{{ product.h1 }}</h1>
+            <p id="details">{{ product.details }}</p>
           </li>
-          <li tabindex="0">
-            <img class="logo" src="../assets/owlogo1.jpg" alt="" />
-            <p>Legendary Edition</p>
-            <p>€39.99</p>
-          </li>
-          <li tabindex="0">
-            <img class="logo" src="@/assets/owlogo2.jpg" alt="" />
-            <p>Standard Edition</p>
-            <p>€19.99</p>
+          <li
+            v-for="option in options"
+            :key="option.id"
+            ref="focusThis"
+            tabindex="0"
+            @click="select(option.id)"
+          >
+            <img class="logo" :src="option.logo" alt="" />
+            <p>{{ option.name }}</p>
+            <p v-if="!!option.price">€{{ option.price }}</p>
           </li>
           <li>
-            <button>Buy Now</button><button id="gift">Gift</button>
+            <button @click="addProductToCart(selecteditemid)">Buy Now</button
+            ><button id="gift">Gift</button>
             <p class="sv">
               <svg
                 _ngcontent-c53=""
@@ -49,7 +54,38 @@
 </template>
 
 <script>
-export default {}
+import { mapActions } from 'vuex'
+export default {
+  data() {
+    return {
+      selecteditemid: 2,
+      id: this.$route.params.id,
+    }
+  },
+  computed: {
+    product() {
+      return this.$store.state.products.all.find(
+        (productpages) => productpages.id === this.id
+      )
+    },
+    options() {
+      return this.$store.state.products.options.filter(
+        (productpages) => productpages.parentid === this.product.id
+      )
+    },
+  },
+  methods: {
+    ...mapActions({
+      addProductToCart: 'products/addProductToCart',
+    }),
+    select(itemid) {
+      this.selecteditemid = itemid
+    },
+    focusMyElement() {
+      this.$refs.focusThis.focus()
+    },
+  },
+}
 </script>
 
 <style scoped>
@@ -58,7 +94,6 @@ export default {}
   background-size: cover;
   background-repeat: no-repeat;
   grid-template-columns: 10% 1fr 1fr 1fr 1.5fr 7%;
-  background-image: url('../assets/bigtracer.jpg');
 }
 .productcontanier {
   grid-column: 5/6;
@@ -113,6 +148,7 @@ h1 {
   float: left;
   height: 100%;
   width: 100px;
+  margin-right: 2rem;
 }
 p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;

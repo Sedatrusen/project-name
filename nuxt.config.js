@@ -10,12 +10,16 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
+  plugins: [{ src: '~/plugins/firebase.js', ssr: false }],
+  build: {
+    babel: {
+      configFile: './babel.config.js',
+    },
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
-
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
@@ -51,6 +55,8 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
   target: 'static',
+  generate: {
+    fallback: '404.html',
+  },
 }

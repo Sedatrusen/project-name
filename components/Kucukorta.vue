@@ -3,28 +3,24 @@
     <div class="aralık">
       <div class="blizardgames"><p class="aralık-yazı">BLIZZARD GAMES</p></div>
       <div class="simgeler">
-        <nuxt-link to="product"
-          ><img class="aralık-simge" src="../assets/aralık1.svg"
+        <nuxt-link
+          v-for="blizzardgame in blizzardgames"
+          :key="blizzardgame.id"
+          :to="{ name: 'productpages-id', params: { id: blizzardgame.id } }"
+          ><img class="aralık-simge" :src="blizzardgame.img"
         /></nuxt-link>
-
-        <img class="aralık-simge" src="../assets/aralık2.svg" />
-        <img class="aralık-simge" src="../assets/aralık3.svg" />
-        <img class="aralık-simge" src="../assets/aralık4.svg" />
-        <img class="aralık-simge" src="../assets/aralık5.svg" />
-        <img class="aralık-simge" src="../assets/aralık6.svg" />
-        <img class="aralık-simge" src="../assets/aralık7.svg" />
-        <img class="aralık-simge" src="../assets/aralık8.svg" />
-        <img class="aralık-simge" src="../assets/aralık9.svg" />
       </div>
       <div>
         <div class="partner">
           <div class="blizardgames">
             <p class="aralık-yazı">PARTNER GAMES</p>
           </div>
-          <img class="aralık-simge" src="../assets/kucukortaprt1.svg" />
-          <img class="aralık-simge" src="../assets/kucukortaprt2.svg" />
-          <img class="aralık-simge" src="../assets/kucukortaprt3.svg" />
-          <img class="aralık-simge" src="../assets/kucukortaprt4.svg" />
+          <nuxt-link
+            v-for="partnergame in partnergames"
+            :key="partnergame.id"
+            :to="{ name: 'productpages-id', params: { id: partnergame.id } }"
+            ><img class="aralık-simge" :src="partnergame.img"
+          /></nuxt-link>
         </div>
       </div>
     </div>
@@ -32,7 +28,15 @@
 </template>
 
 <script>
-export default {}
+import { mapState } from 'vuex'
+export default {
+  computed: {
+    ...mapState({
+      blizzardgames: (state) => state.games.blizzardgames,
+      partnergames: (state) => state.games.partnergames,
+    }),
+  },
+}
 </script>
 
 <style scoped>

@@ -8,53 +8,26 @@
 
       <b-nav-item-dropdown class="m-2 dparka" text="Games">
         <b-dropdown-header id="dropdown-header-label">
-          BLIZZARD GAMES
+          Blizzard Games
         </b-dropdown-header>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menuwow.svg" /> World of Warcraft
-        </b-dropdown-item-button>
-        <b-dropdown-item to="productpage">
-          <img src="../assets/menuow.svg" /> Overwatch
+        <b-dropdown-item
+          v-for="blizzardgame in blizzardgames"
+          :key="blizzardgame.id"
+          :to="{ name: 'productpages-id', params: { id: blizzardgame.id } }"
+        >
+          <img :src="blizzardgame.img" />{{ blizzardgame.type }}
         </b-dropdown-item>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menudiablo3.svg" />Diablo III
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menuhearthstone.svg" /> Hearthstone
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menuheroes-of-the-storm.svg" /> Heroes of the
-          Storm
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menustarcraft-ii .svg" /> StarCraft II
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menustarcraft-remastered.svg" />StarCraft
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menudiablo-ii (1).svg" /> Diablo II
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menuwarcraft-iii (1).svg" /> Warcraft III
-        </b-dropdown-item-button>
+
         <b-dropdown-header id="dropdown-header-label">
           Partner Games
         </b-dropdown-header>
-
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menucall-of-duty-black-ops-cold-war.svg" /> Call
-          of Duty: BOCW
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menucall-of-duty-mw (1).svg" /> Call of Duty: MW
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menucall-of-duty (1).svg" /> Call of Duty: BO4
-        </b-dropdown-item-button>
-        <b-dropdown-item-button aria-describedby="dropdown-header-label">
-          <img src="../assets/menucall-of-duty-mw2cr.svg" /> Call of Duty: MW2CR
-        </b-dropdown-item-button>
+        <b-dropdown-item
+          v-for="partnergame in partnergames"
+          :key="partnergame.id"
+          :to="{ name: 'productpages-id', params: { id: partnergame.id } }"
+        >
+          <img :src="partnergame.img" />{{ partnergame.type }}
+        </b-dropdown-item>
       </b-nav-item-dropdown>
       <b-nav-item-dropdown class="m-2 dparka" text="Services">
         <b-dropdown-item-button aria-describedby="dropdown-header-label">
@@ -82,9 +55,32 @@
           <b-form-input type="text"></b-form-input>
         </b-input-group>
       </b-nav-form>
-      <b-nav-item class="m-2 kalp" to="/">
+      <b-nav-item v-b-modal.modal-tall class="m-2 kalp">
         <b-icon icon="heart-fill" aria-hidden="true" font-scale="1"></b-icon>
-        Wish List
+
+        Whislist
+
+        <b-modal
+          id="modal-tall"
+          class="arkaplan"
+          header-bg-variant="dark"
+          header-text-variant="light"
+          body-bg-variant="dark"
+          body-text-variant="light"
+          title="Whishlist"
+          hide-footer
+        >
+          <ul class="whislist">
+            <li v-for="whislist in whislists" :key="whislist.name" tabindex="0">
+              <img class="logo" :src="whislist.logo" alt="" />
+              <p>{{ whislist.name }}</p>
+              <p>€{{ whislist.price }}</p>
+            </li>
+          </ul>
+
+          <p>Total : € {{ total }}</p>
+          <b-button @click="checkout">Buy All</b-button>
+        </b-modal>
       </b-nav-item>
       <b-nav-item-dropdown class="m-2 dparka" text="Blizzard Balance">
         <b-dropdown-item-button aria-describedby="dropdown-header-label">
@@ -104,7 +100,22 @@
 </template>
 
 <script>
-export default {}
+import { mapState, mapGetters, mapActions } from 'vuex'
+export default {
+  computed: {
+    ...mapState({
+      blizzardgames: (state) => state.games.blizzardgames,
+      partnergames: (state) => state.games.partnergames,
+    }),
+    ...mapGetters('products', {
+      whislists: 'cartProducts',
+      total: 'cartTotal',
+    }),
+  },
+  methods: {
+    ...mapActions('products', ['checkout']),
+  },
+}
 </script>
 <style>
 .navbar {
@@ -176,5 +187,25 @@ input:focus {
 .kalp {
   border: 1px solid rgba(255, 255, 255, 0.15);
   height: 120%;
+}
+.whislist {
+  list-style-type: none;
+}
+.whislist li {
+  border-bottom: 1px solid #13161d;
+  background-color: transparent;
+  padding-left: 25px;
+  padding-top: 20px;
+  margin: 0;
+}
+.logo {
+  align-self: start;
+  float: left;
+  height: 100%;
+  width: 100px;
+  margin-right: 1rem;
+}
+.arkaplan {
+  background-color: #001732;
 }
 </style>

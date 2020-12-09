@@ -7,7 +7,11 @@
         </div>
         <div id="login">
           <div v-show="show" class="../assets/emailout">
-            <p class="uyarı">Please enter your account.</p>
+            <p class="uyarı">
+              <b-icon icon="slash-circle" type="slash-circle"></b-icon>
+
+              We can't find that Blizzard Account.
+            </p>
           </div>
 
           <div class="emailout">
@@ -59,7 +63,7 @@ export default {
   methods: {
     tiklama(email, password) {
       if (email == null && password == null) {
-        ;(this.show = true)((this.isVisible = true))
+        this.show = true
       } else this.show = false
     },
   },

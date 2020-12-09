@@ -2,18 +2,29 @@
   <div class="arka">
     <Corrosuel />
     <Kucukorta />
-    <h1>Recommended</h1>
-    <Kutular />
+    <div class="paddig">
+      <h1>Recommended</h1>
+      <Kutular />
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Blizzard Shop',
+    }
+  },
+}
 </script>
 <style scoped>
 .arka {
   display: block;
   background-color: #002650;
+}
+.paddig {
+  padding-left: 6rem;
 }
 h1 {
   text-align: start;
