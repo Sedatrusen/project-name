@@ -38,6 +38,9 @@ export default {
   computed: {
     ...mapState({ items: (state) => state.carouselitems.carouselitems }),
   },
+  created() {
+    this.$store.dispatch('carouselitems/addcarouselitems')
+  },
 }
 </script>
 <style scoped>

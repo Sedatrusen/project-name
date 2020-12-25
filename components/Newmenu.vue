@@ -15,7 +15,7 @@
           :key="blizzardgame.id"
           :to="{ name: 'productpages-id', params: { id: blizzardgame.id } }"
         >
-          <img :src="blizzardgame.img" />{{ blizzardgame.type }}
+          <img :src="blizzardgame.icon" />{{ blizzardgame.type }}
         </b-dropdown-item>
 
         <b-dropdown-header id="dropdown-header-label">
@@ -26,7 +26,7 @@
           :key="partnergame.id"
           :to="{ name: 'productpages-id', params: { id: partnergame.id } }"
         >
-          <img :src="partnergame.img" />{{ partnergame.type }}
+          <img :src="partnergame.icon" />{{ partnergame.type }}
         </b-dropdown-item>
       </b-nav-item-dropdown>
       <b-nav-item-dropdown class="m-2 dparka" text="Services">
@@ -100,17 +100,27 @@
 </template>
 
 <script>
-import { mapState, mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
-    ...mapState({
-      blizzardgames: (state) => state.games.blizzardgames,
-      partnergames: (state) => state.games.partnergames,
-    }),
+    blizzardgames() {
+      return this.$store.state.products.Products.filter(
+        (cat) => cat.categories === 'BLIZZARDGAMES'
+      )
+    },
+
+    partnergames() {
+      return this.$store.state.products.Products.filter(
+        (cat) => cat.categories === 'PARTNERGAMES'
+      )
+    },
     ...mapGetters('products', {
       whislists: 'cartProducts',
       total: 'cartTotal',
     }),
+  },
+  created() {
+    this.$store.dispatch('products/addproducts')
   },
   methods: {
     ...mapActions('products', ['checkout']),

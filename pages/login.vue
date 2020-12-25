@@ -6,11 +6,11 @@
           <img src="../assets/blizzlogo.png" alt />
         </div>
         <div id="login">
-          <div v-show="show" class="../assets/emailout">
+          <div v-if="error" class="../assets/emailout">
             <p class="uyarı">
               <b-icon icon="slash-circle" type="slash-circle"></b-icon>
 
-              We can't find that Blizzard Account.
+              {{ error.message }}
             </p>
           </div>
 
@@ -52,12 +52,17 @@
 </template>
 
 <script>
+import { auth } from '../plugins/firebase'
+
 export default {
   title: 'Blizzard Login',
   layout: 'no-layout',
   data() {
     return {
       show: false,
+      error: '',
+      email: '',
+      password: '',
     }
   },
   methods: {
@@ -65,6 +70,15 @@ export default {
       if (email == null && password == null) {
         this.show = true
       } else this.show = false
+
+      auth
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then((data) => {
+          this.$router.replace({ name: 'index' })
+        })
+        .catch((error) => {
+          this.error = error
+        })
     },
   },
 }

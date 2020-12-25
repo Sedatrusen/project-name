@@ -17,113 +17,14 @@
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          id: 1,
-          router: 'CallofDuty:MW',
-          arkafon: require('../assets/kutularcod1.jpg'),
-          simge: require('../assets/kutularcod2.svg'),
-          yazi1: 'Call of Duty®: Warzone',
-          yazi2: 'Free For Everyone',
-          yazi3: 'Action Shooter',
-          yazi4: 'Play For Free',
-        },
-        {
-          id: 1,
-          router: 'WorldofWarcraft',
-          arkafon: require('../assets/kutularwow1.jpg'),
-          simge: require('../assets/kutularwow2.svg'),
-          yazi1: 'World of Warcraft®: Shadowlands',
-          yazi2: 'Pre-purchase now! Arriving in November 2020',
-          yazi3: 'Massively Multiplayer RPG',
-          yazi4: ' From  €39.99',
-        },
+import { mapState } from 'vuex'
 
-        {
-          id: 1,
-          router: 'WorldofWarcraft',
-          arkafon: require('../assets/kutularclassic1.jpg'),
-          simge: require('../assets/kutularclassic2.svg'),
-          yazi1: 'World of Warcraft®',
-          yazi2: 'Includes access to World of Warcraft and WoW Classic!',
-          yazi3: 'Subscriptions',
-          yazi4: ' Learn More',
-        },
-        {
-          id: 1,
-          router: 'Hearthstone',
-          arkafon: require('../assets/kutularac1.jpg'),
-          simge: require('../assets/kutularac2.svg'),
-          yazi1: 'Scholomance Academy',
-          yazi2: 'Latest Expansion!',
-          yazi3: 'Card Packs',
-          yazi4: ' From  €2.99',
-        },
-        {
-          id: 1,
-          router: 'CallofDuty:MW',
-          arkafon: require('../assets/kutularmw1.jpg'),
-          simge: require('../assets/kutularmw2.svg'),
-          yazi1: 'Call of Duty®: Modern Warfare® - Battle Pass Edition',
-          yazi2: '',
-          yazi3: 'Action Shooter',
-          yazi4: '€79.99',
-        },
-        {
-          id: 1,
-          router: 'Hearthstone',
-          arkafon: require('../assets/kutularhs1.jpg'),
-          simge: require('../assets/kutularhs2.svg'),
-          yazi1: 'Hearthstone®',
-          yazi2: '',
-          yazi3: 'Strategy Card Game',
-          yazi4: ' Play For Free',
-        },
-        {
-          id: 1,
-          router: 'Overwatch',
-          arkafon: require('../assets/kutularow1.jpg'),
-          simge: require('../assets/kutularow2.svg'),
-          yazi1: 'Overwatch®: Legendary Edition',
-          yazi2: '',
-          yazi3: 'Team-Based Shooter',
-          yazi4: ' €39.99',
-        },
-        {
-          id: 1,
-          router: 'StarCraftII',
-          arkafon: require('../assets/kutularsc1.jpg'),
-          simge: require('../assets/kutularsc2.svg'),
-          yazi1: 'StarCraft® II: Campaign Collection',
-          yazi2: '',
-          yazi3: 'Real-time Strategy',
-          yazi4: ' €39.99',
-        },
-        {
-          id: 1,
-          router: 'StarCraft',
-          arkafon: require('../assets/kutularhots1.jpg'),
-          simge: require('../assets/kutularhots2.svg'),
-          yazi1: 'Heroes of the Storm™',
-          yazi2: '',
-          yazi3: 'MOBA',
-          yazi4: '  Play For Free',
-        },
-        {
-          id: 1,
-          router: 'DiabloII',
-          arkafon: require('../assets/kutulard31.jpg'),
-          simge: require('../assets/kutulard32.svg'),
-          yazi1: 'Diablo® III: Eternal Collection',
-          yazi2: '',
-          yazi3: 'Action RPG',
-          yazi4: '  €39.99',
-        },
-      ],
-    }
+export default {
+  computed: {
+    ...mapState({ items: (state) => state.kutular.kutular }),
+  },
+  created() {
+    this.$store.dispatch('kutular/addkutular')
   },
 }
 </script>

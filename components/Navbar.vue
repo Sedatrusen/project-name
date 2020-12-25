@@ -64,7 +64,10 @@
             offset="-175px"
             text="My Account"
           >
-            <b-dropdown-item to="/login">Login</b-dropdown-item>
+            <b-dropdown-item v-if="loggedIn" to="/login"
+              >Logout</b-dropdown-item
+            >
+            <b-dropdown-item v-else to="/login">Login</b-dropdown-item>
             <b-dropdown-item class="m-2" to="/login"
               ><b-icon class="navbaricon" icon="gear"></b-icon>Account
               Settings</b-dropdown-item
@@ -80,7 +83,43 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import { auth } from '../plugins/firebase'
+export default {
+  asyncData() {},
+  data() {
+    return {
+      loggedIn: false,
+    }
+  },
+  mounted() {
+    this.setupFirebase()
+  },
+  methods: {
+    setupFirebase() {
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          // User is signed in.
+
+          auth.currentUser.getIdToken(true)
+
+          this.loggedIn = true
+        } else {
+          // if (Cookies.set('access_token', 'blah')) {
+          // }
+          // No user is signed in.
+          this.loggedIn = false
+        }
+      })
+    },
+    logout() {
+      auth.signOut().then(() => {
+        this.$router.replace({ name: 'login' })
+      })
+    },
+  },
+}
+</script>
 
 <style scoped>
 .sayfa {

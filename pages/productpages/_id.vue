@@ -13,7 +13,7 @@ export default {
     }
   },
   computed: {
-    ...mapState({ items: (state) => state.products.all }),
+    ...mapState({ items: (state) => state.products.Products }),
     product() {
       return this.items.find((items) => items.id === this.id)
     },

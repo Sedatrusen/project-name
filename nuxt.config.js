@@ -10,7 +10,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  plugins: [{ src: '~/plugins/firebase.js', ssr: false }],
+  plugins: [{ src: '~/plugins/firebase.js' }],
   build: {
     babel: {
       configFile: './babel.config.js',

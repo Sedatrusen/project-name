@@ -9,7 +9,7 @@ export const state = () => ({
     {
       id: 'Overwatch',
       img: require('../assets/menuow.svg'),
-      type: ' Overwatch',
+      type: 'Overwatch',
     },
     {
       id: 'DiabloIII',

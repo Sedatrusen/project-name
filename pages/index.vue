@@ -11,6 +11,9 @@
 
 <script>
 export default {
+  created() {
+    this.$store.dispatch('products/addproducts')
+  },
   head() {
     return {
       title: 'Blizzard Shop',

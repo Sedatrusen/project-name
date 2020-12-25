@@ -64,7 +64,7 @@ export default {
   },
   computed: {
     product() {
-      return this.$store.state.products.all.find(
+      return this.$store.state.products.Products.find(
         (productpages) => productpages.id === this.id
       )
     },
@@ -73,6 +73,10 @@ export default {
         (productpages) => productpages.parentid === this.product.id
       )
     },
+  },
+  created() {
+    this.$store.dispatch('products/addproducts')
+    this.$store.dispatch('products/addoptions')
   },
   methods: {
     ...mapActions({

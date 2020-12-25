@@ -7,7 +7,7 @@
           v-for="blizzardgame in blizzardgames"
           :key="blizzardgame.id"
           :to="{ name: 'productpages-id', params: { id: blizzardgame.id } }"
-          ><img class="aralık-simge" :src="blizzardgame.img"
+          ><img class="aralık-simge" :src="blizzardgame.icon"
         /></nuxt-link>
       </div>
       <div>
@@ -19,7 +19,7 @@
             v-for="partnergame in partnergames"
             :key="partnergame.id"
             :to="{ name: 'productpages-id', params: { id: partnergame.id } }"
-            ><img class="aralık-simge" :src="partnergame.img"
+            ><img class="aralık-simge" :src="partnergame.icon"
           /></nuxt-link>
         </div>
       </div>
@@ -28,13 +28,19 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 export default {
   computed: {
-    ...mapState({
-      blizzardgames: (state) => state.games.blizzardgames,
-      partnergames: (state) => state.games.partnergames,
-    }),
+    blizzardgames() {
+      return this.$store.state.products.Products.filter(
+        (cat) => cat.categories === 'BLIZZARDGAMES'
+      )
+    },
+
+    partnergames() {
+      return this.$store.state.products.Products.filter(
+        (cat) => cat.categories === 'PARTNERGAMES'
+      )
+    },
   },
 }
 </script>

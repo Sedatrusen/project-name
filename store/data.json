@@ -1,0 +1,361 @@
+{"carouselitems": [
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Fortacod1.jpg?alt=media&token=cc8fc624-dcf2-4ac4-95bb-cd4034b00b24",
+     "image2": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Fortacod2.png?alt=media&token=d96a466c-d158-47a2-98f1-f128800a93bd",
+     "parca": "Get the Confrontation Weapons Pack",
+     "buton": " Pre-purchase "
+    },
+    {
+     "image": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Fortawow1.jpg?alt=media&token=f804dac9-9621-41a7-82e8-6bce0b498f5d",
+      "image2": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Fortawow2.png?alt=media&token=7cf1889b-5f52-49d7-8396-3cbf87e0ccfb",
+     "parca":" PURCHASE AND GET THE XRK WEAPONS PACK AT LAUNCH",
+     "buton": "Pre-Purchase"
+    },
+    {
+     "image": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Forta3.jpg?alt=media&token=57d73f96-3378-45a0-8d6c-297c0ce42624",
+      "image2": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Forta3.3.png?alt=media&token=9b78adaa-05d9-4cdd-8459-3bdc3261c19e",
+     "parca": "SAVE BIG ON BATTLE FOR AZEROTH",
+     "buton": "Buy Now"
+    },
+    {
+     "image": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Fortahs1.jpg?alt=media&token=7ff20117-ecdb-4136-9530-21c2d46d4aea",
+      "image2":"https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Orta%2Fortahs2.png?alt=media&token=bd4e4837-a568-486c-a295-955b182fcf6d",
+      "parca": "GET THE SPRITE DARTER’S WINGS WITH A 6-MONTH SUBSCRIPTION",
+     "buton": "Buy Now"
+    }
+  ],
+  "Products": [
+    
+    {
+      "id": "WorldofWarcraft",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FWOW%2Fwowproductarkafon.jpg?alt=media&token=bc2645ff-a9a8-4848-bd4e-da9b70e414c9",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FWOW%2Fwowproductlogo.png?alt=media&token=1cfbf172-bf9a-4de6-b880-4ebbedb01b9d",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FWOW%2Fworld-of-warcraftproducticon.svg?alt=media&token=9cc3d170-ef12-4ee4-8286-7f10f4e8a5d1",
+     "h1": "World of Warcraft®: Shadowlands",
+      "details": "Massively Multiplayer RPG",
+      "categories":"BLIZZARDGAMES", "type": "World of Warcraft"
+    },
+    {
+      "id": "Overwatch",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FOverwatch%2Fbigtracer.jpg?alt=media&token=4581aa87-49a9-4219-9a7a-7659e5d24e84",
+     "logo":"https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FOverwatch%2Foverwatchlogo.png?alt=media&token=a697c209-9e53-42c2-851f-17e34f422b54",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FOverwatch%2Foverwatchicon.svg?alt=media&token=eb820aab-62b6-48b6-9d07-abbefa4ec820",
+     "h1": "Overwatch®: Legendary",
+      "details": "Team-Based Shooter",
+     
+           "categories":"BLIZZARDGAMES","type": "Overwatch"
+    },
+    {
+      "id": "DiabloIII",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FDiabloIII%2Fdiablo3productarkafon.jpg?alt=media&token=686b63a0-8685-4f9a-bdc5-467ac4d8228d",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FDiabloIII%2Fdiablo3logo.png?alt=media&token=16e8c05b-89af-4fef-90bc-6ed401a022fe",
+     "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FDiabloIII%2Fdiablo-iiiprocuticon.svg?alt=media&token=c083d799-484f-4cec-9d4b-d6895a320064",
+      "h1": "Diablo® III",
+      "details": "Action RPG"
+      ,
+      "categories":"BLIZZARDGAMES","type": "Diablo III"
+    },
+    {
+      "id": "Hearthstone",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FHearthstone%2Fheartstoneproductarkafon.jpg?alt=media&token=3b049a10-b90a-4d3d-a5d1-ac9e4e4cb19d",
+
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FHearthstone%2Fhearthstone%20producticon.svg?alt=media&token=0dab122c-5452-4b15-9935-8005a0b52f05",
+      "h1": "'Madness at the Darkmoon Faire®'",
+      "details": "Hearthstone®: Card Packs"
+      ,
+      "categories":"BLIZZARDGAMES","type": "Hearthstone"
+    },
+    {
+      "id": "HeroesoftheStorm",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FHeroesoftheStorm%2Fhotsproductarkafon.jpg?alt=media&token=fce12b36-7d65-4c26-bc5b-72dcbb3e725f",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FHeroesoftheStorm%2F94d4a5cec48896ea32114553ac71f8a6-hots-minglow-1000x522.png?alt=media&token=2f068d87-11c9-4fac-9e60-ca289586b361",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FHeroesoftheStorm%2Fheroes-of-the-storm%20(1).svg?alt=media&token=d149769f-2de7-4628-b196-ef663dd108a8",
+      "h1": "Heroes of the Storm™",
+      "details": "MOBA"
+      ,
+      "categories":"BLIZZARDGAMES","type": "Heroes of the   Storm"
+    },
+    {
+      "id": "StarCraftII",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FStarCraftII%2Fca183718dbe94037377abe9b9b79da3c-prod-full-bg-headerless.jpg?alt=media&token=dc800a58-e751-4214-b586-40d0ed6c42f4",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FStarCraftII%2F878a1859e39bbe78961bdc409a7f51db-sc2-logo.png?alt=media&token=1513188e-f5f9-45b9-932f-d4b1b2b49e03",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FStarCraftII%2Fstarcraft-ii%20(1).svg?alt=media&token=5ea6fa48-656b-41bf-a929-556142138a26",
+      "h1": "StarCraft® II: Campaign Collection",
+      "details": "Real-time Strategy",
+      "categories":"BLIZZARDGAMES","type": "StarCraft II"
+    },
+    {
+      "id": "StarCraft",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FStarCraft%2F8e03fafc7b47e1aceb47628750c47359-prod-full-bg-headerless.jpg?alt=media&token=882981f1-010e-4de0-8675-a72763af099b",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FStarCraft%2F243a0bbc204e30b22d5a59e7a9e88e9d-starcraft-anthology-1000.png?alt=media&token=2207ac1b-e5df-46c2-8290-8d022618b7dd",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FStarCraft%2Fstarcraft-remastered%20(1).svg?alt=media&token=0686cd3a-0f9f-4955-9f77-6175feff26a3",
+      "h1": "StarCraft®",
+      "details": "Real-time Strategy",
+      "categories":"BLIZZARDGAMES","type": "StarCraft"
+    },
+    {
+      "id": "DiabloII",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FDiabloII%2F83e2c8ce037c691435e1021ce0486c8b-prod-full-bg-headerless.jpg?alt=media&token=ee58a406-eacd-4f09-b722-f8570dff7ce1",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FDiabloII%2F12568e51f48b249990bd42fc837e0d2a-diablo-II.png?alt=media&token=7583321e-c034-4576-b032-42eb3b7a5b2d",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FDiabloII%2Fdiablo-ii%20(1).svg?alt=media&token=7d3d3a4c-02bc-4ea4-9a04-676b42a03d91",
+      "h1": "Diablo® II",
+      "details": "Action RPG",
+      "categories":"BLIZZARDGAMES","type": "Diablo II"
+    },
+    {
+      "id": "WarcraftIII",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FWarcraftIII%2F44004fe111706bac3ad1c9a5c7264d1f-WC3R_2020_Orc_Art_Shop_Product_Page_Assets_prod-full-bg_TS03.jpg?alt=media&token=aee870be-7ee3-4043-8c7e-cbfb12963a39",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FWarcraftIII%2Fac48e177da0ca6377b8ba8f275c6700b-warcraft3-reforged-enus-1000x500.png?alt=media&token=1166e892-0f1a-488f-9c5f-115e8bb20da7",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FWarcraftIII%2Fwarcraft-iii%20(1).svg?alt=media&token=1272c905-b3b8-46db-bc7f-d17fb2840ebf",
+      "h1": "Warcraft® III: Reforged",
+      "details": "Real-time Strategy",
+      "categories":"BLIZZARDGAMES","type": "Warcraft III"
+    },
+    {
+      "id": "CallofDuty:BOCW",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3ABOCW%2Fd4b6308a9c0ffb51f723462ef1bb73b9-CODBO_CW-Bnet_Product_Desktop-Background-2280x910-UPDATE-For_20200826.jpg?alt=media&token=03bbe0a2-633a-4b82-b76f-87beeac9f16c",
+      "logo":"https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3ABOCW%2Fd71ef0137199aade2dce1457d2642c7e-d20200429-004_Reveal_Logo_Lockup_1P_Bliz_Shop_POSITIVE_activision.png?alt=media&token=d5c9afc1-bdda-48aa-bc58-04b258f510e4",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3ABOCW%2Fcall-of-duty-black-ops-cold-war.svg?alt=media&token=5cc2f163-38bc-4163-93ce-198d94a3e788",
+      "h1": "Call of Duty®: Black Ops Cold War",
+      "details": "Action Shooter",
+      "categories":"PARTNERGAMES","type": "Call of Duty: BOCW"
+    },
+    {
+      "id": "CallofDuty:MW",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3AMW%2F77014622d6165448ff18e4703178d6c3-Magma-prod-full-bg-update022420.jpg?alt=media&token=2950b083-cb9c-41bc-83e6-460f8cb645de",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3AMW%2F10ad1f80958e2d00396d211f1905d710-WARZONE_Logo_Mock_2.png?alt=media&token=c4c7766a-5ce1-4a1f-9a97-ffe480d4ca42",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3AMW%2Fcall-of-duty-mw%20(1).svg?alt=media&token=65ee9f77-9c9d-4a5b-9842-ec491cd605cb",
+      "h1": "Call of Duty®: Black Ops Cold War",
+      "details": "Action Shooter",
+      "categories":"PARTNERGAMES","type": "Call of Duty: MW"
+    },
+    {
+      "id": "CallofDuty:BO4",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3ABO4%2F7954c2f62c3065eee5082b3193a31366-CODBO4-Bnet_Game-Shop_Background_Desktop-2290x910-20190930.jpg?alt=media&token=c84ce9dd-614f-47ae-b944-2c5575e3a7ff",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3ABO4%2Fde847b6da411da2da8c5b9e41bfe8d56-COD_LOGO_UPDATED_NO_SHADOW.png?alt=media&token=64963f65-0733-483e-b6a9-050d028f4af8",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallofDuty%3ABO4%2Fcall-of-duty%20(1).svg?alt=media&token=c348ffed-5050-410b-b5c1-094aa01a2cce",
+      "h1": "Call of Duty®: Black Ops 4",
+      "details": "Action Shooter",
+      "categories":"PARTNERGAMES","type": "Call of Duty: BO4"
+    },
+    {
+      "id": "Callof Duty:MW2CR",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallof%20Duty%3AMW2CR%2Fca5641d89e0495fcd468350d298097d5-Lazarus-Bnet_Placeholder-Shop_Background_Desktop-2280x910-For_20200331.jpg?alt=media&token=b3da9d9e-2641-4f68-9173-fd68635d814d",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallof%20Duty%3AMW2CR%2F3bb2ca976a136e23390aa65d84b6c51d-Lazarus-Bnet_Game-Shop_Logo-6260x1940-For_20200331_20200323.png?alt=media&token=7a1ad19f-835f-4e59-b115-bd52794a3470",
+      "icon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Products%2FCallof%20Duty%3AMW2CR%2Fcall-of-duty-mw2cr.svg?alt=media&token=01e1c5a7-703a-4eab-86d0-5b14dc84ab0e",
+      "h1": "Call of Duty®: Modern Warfare® 2 Campaign Remastered",
+      "details": "Action Shooter",
+      "categories":"PARTNERGAMES","type": "Call of Duty: MW2CR"
+    }
+  ], "options": [
+    {
+      "id": 1,
+      "parentid": "Overwatch",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FOverwatch%2Fowlogo1.jpg?alt=media&token=2c35d687-8880-4725-a788-bb87374b92cb",
+      "name": "Legendary Edition",
+      "price": 39.99
+    },
+    {
+      "id": 2,
+      "parentid": "Overwatch",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FOverwatch%2Fowlogo2.jpg?alt=media&token=6d15b2cc-063e-4773-9744-7ae7d293b4dc",
+      "name": "Standard Edition",
+      "price": 19.99
+    },
+    {
+      "id": 3,
+      "parentid": "WorldofWarcraft",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FWorldofWarcraft%2Fwowoption1.jpg?alt=media&token=6b3fef75-c3d7-41e0-9fab-3e72db4e6320",
+      "name": "Heroic Edition",
+      "price": 54.99
+    },
+    {
+      "id": 4,
+      "parentid": "WorldofWarcraft",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FWorldofWarcraft%2Fwowoption1.jpg?alt=media&token=6b3fef75-c3d7-41e0-9fab-3e72db4e6320",
+      "name": "Base Edition",
+      "price": 39.99
+    },
+    {
+      "id": 5,
+      "parentid": "DiabloIII",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FDiabloIII%2Fdiablo3option1.jpg?alt=media&token=41c76c79-d42a-4cfc-b48f-0a87116bad9b",
+     "name": "Eternal Collection",
+      "price": 39.99
+    },
+    {
+      "id": 6,
+      "parentid": "DiabloIII",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FDiabloIII%2Fdiablo3option2.jpg?alt=media&token=ec6780a3-6d4c-4d8d-8f7d-d266cf678d10",
+      "name": "Battle Chest",
+      "price": 29.99
+    },
+    { "id": 9, "parentid": "Hearthstone", "name":" 2 Packs", "price": 2.99 },
+    { "id": 10, "parentid": "Hearthstone", "name": "7 Packs", "price": 9.99 },
+    { "id": 11, "parentid": "Hearthstone", "name": "15 Packs", "price": 19.99 },
+    { "id": 12, "parentid": "Hearthstone", "name": "40 Packs", "price": 49.99 },
+    { "id": null, "parentid": "HeroesoftheStorm", "name": "Play For Free" },
+    {
+      "id": 14,
+      "parentid": "StarCraftII",
+      "logo":"https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FStarCraftII%2Fe71edb2abb1fb766100d6dbe6d168ea4-prod-thumb.jpg?alt=media&token=7ef7f3f9-b7fd-44d2-997e-7ffcf95ee6ee",
+      "name": "Standard Edition",
+      "price": 39.99
+    },
+    {
+      "id": 15,
+      "parentid": "StarCraftII",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FStarCraftII%2F87e1302addcc27739d6c0c2cc0271154-sc2-lotv-upgrade-DD-CC-enus.jpg?alt=media&token=c8d36f11-a289-4e44-8cdc-f5af3aae76ce",
+      "name": "Digital Deluxe Edition",
+      "price": 59.99
+    },
+    { "id": 16, "parentid": "StarCraft", "name": "Free To Play" },
+    { "id": 17," price": 9.99, "parentid": "DiabloII", "name": "Diablo II" },
+    {
+      "id": 18,
+      "parentid": "WarcraftIII",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FWarcraftIII%2F26972e24376da6d1bc021446d1c508e4-WC3R_prod-thumb-Deluxe.jpg?alt=media&token=7a9c157f-68b0-40eb-99fa-8bfed1707781",
+     "name": "Spoils of War Edition",
+      "price": 39.99
+    },
+    {
+      "id": 19,
+      "parentid": "WarcraftIII",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FWarcraftIII%2Ff66923163a6c1e5ec2c2888d003a2f0a-WC3R_2020_Orc_Art_Shop_Product_Page_Assets_prod-thumb_TS03.jpg?alt=media&token=35570480-ca42-4409-8097-50a4c8282dab",
+      "name": "Standard Edition",
+     "price": 29.99
+    },
+    {
+      "id": 20,
+      "parentid": "CallofDuty:BOCW",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FCallofDuty%3ABOCW%2Fad5d571835fedd44424e60c4a977a332-d20200720-020_Zeus_Keyart_1P_Upsell_Ultimate_Edition_960x540.jpg?alt=media&token=3cf46c48-5ebb-42d5-9b31-f55ff51a32bb",
+      "name": "Ultimate Edition",
+      "price": 89.99
+    },
+    {
+      "id": 21,
+      "parentid": "CallofDuty:BOCW",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FCallofDuty%3ABOCW%2Fc4f6caaca24f373b5ed69ed2f6efa4f6-d20200720-020_Zeus_Keyart_1P_Upsell_Base_Game_960x540.jpg?alt=media&token=62af8bea-0df8-4d10-b4de-eef6e80da9ff",
+      "name": "Standard Edition",
+      "price": 59.99
+    },
+    { "id": 22, "parentid": "CallofDuty:MW", "name": "Free For Everyone" },
+    {
+      "id": 23,
+      "parentid": "CallofDuty:BO4",
+      "logo":"https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FCallofDuty%3ABO4%2Fd3da8eedcea5f1b6bebc3d86f3187064-CODBO4-Bnet_Game-Feature_Art_R3_C2-640x360-20180604.png?alt=media&token=5c34c5ee-11c6-48a4-942f-62eec70dcfa6",
+      "name": "Digital Deluxe",
+      "price": 89.99
+    },
+    {
+      "id": 24,
+      "parentid": "CallofDuty:BO4",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/Options%2FCallofDuty%3ABO4%2Ff0237bcc69a719e4da6c10580f9088e9-CODBO4-Bnet_Game-Cart_Feature_3A_Standard-960x540-20190930.jpg?alt=media&token=6cd2ee67-ee5e-4ca9-9344-0d5326a111e2",
+      "name": "Standard Edition",
+     " price": 59.99
+    },
+    { "id": 25, "price": 24.99,"parentid": "Callof Duty:MW2CR" }
+  ],
+  "kutular": [
+    {
+      "id": 1,
+      "router": "CallofDuty:MW",
+      "arkafon":"https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FCallofDuty%3AMW%2Fkutularcod1.jpg?alt=media&token=8d06d56f-db16-400e-9638-e5362a0088e7",
+     "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FCallofDuty%3AMW%2Fkutularcod2.svg?alt=media&token=0ebea599-2697-4836-8819-245e064030e8",
+      "yazi1":"Call of Duty®: Warzone",
+      "yazi2":"Free For Everyone",
+      "yazi3":"Action Shooter",
+      "yazi4":"Play For Free"
+    },
+    {
+      "id": 1,
+      "router": "WorldofWarcraft",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FWorldofWarcraft%2Fkutularwow1.jpg?alt=media&token=43310c14-bf7d-48e1-8fbe-9a93f76f016a",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FWorldofWarcraft%2Fkutularwow2.svg?alt=media&token=e1e1b808-a4c4-4a0e-acd0-2d3cb6b4167f",
+      "yazi1": "World of Warcraft®: Shadowlands",
+      "yazi2": "Pre-purchase now! Arriving in November 2020",
+      "yazi3": "Massively Multiplayer RPG",
+      "yazi4": " From  €39.99'"
+    },
+
+    {
+      "id": 1,
+      "router": "WorldofWarcraft",
+      "arkafon":"https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FWorldofWarcraft%2Fkutularclassic1.jpg?alt=media&token=0f6691e1-2ab7-4f41-9398-e6ad5b4730a0",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FWorldofWarcraft%2Fkutularclassic2.svg?alt=media&token=1425ddea-4fe7-4357-9795-7fd1b7132157",
+      "yazi1": "World of Warcraft®",
+      "yazi2": "Includes access to World of Warcraft and WoW Classic!",
+      "yazi3": "Subscriptions",
+      "yazi4": " Learn More"
+    },
+    {
+      "id": 1,
+      "router": "Hearthstone",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FHearthstone%2Fkutularac1.jpg?alt=media&token=0950a7f0-d7ba-4e98-a3ae-8580220dc3fc",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FHearthstone%2Fkutularac2.svg?alt=media&token=2efc1e2e-dc6d-445f-b0c5-194150cf781c",
+      "yazi1": "Scholomance Academy",
+      "yazi2": "Latest Expansion!",
+      "yazi3": "Card Packs",
+      "yazi4": "From  €2.99"
+    },
+    {
+      "id": 1,
+     "router": "CallofDuty:MW",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FCallofDuty%3AMW%2Fkutularmw1.jpg?alt=media&token=a678ef9a-5b87-4339-ac69-1ee0996dd206",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FCallofDuty%3AMW%2Fkutularmw2.svg?alt=media&token=97919b42-5f06-4ada-8fe5-6acbabe0a1b2",
+      "yazi1": "Call of Duty®: Modern Warfare® - Battle Pass Edition",
+      "yazi2": "",
+      "yazi3": "Action Shooter",
+      "yazi4": "€79.99"
+    },
+    {
+      "id": 1,
+      "router": "Hearthstone",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FHearthstone%2Fkutularhs1.jpg?alt=media&token=705715f6-c92f-4773-9a42-2d72e1727378",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FHearthstone%2Fkutularhs2.svg?alt=media&token=3dff48c1-8ded-4861-8e78-809af9445d96",
+      "yazi1": "Hearthstone®",
+      "yazi2": "",
+      "yazi3": "Strategy Card Game",
+      "yazi4": " Play For Free"
+    },
+    {
+      "id": 1,
+      "router": "Overwatch",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FOverwatch%2Fkutularow1.jpg?alt=media&token=3c3ef0ae-4279-417d-9966-48b9d10a5706",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FOverwatch%2Fkutularow2.svg?alt=media&token=82ac7221-2f66-4923-a4c9-5e57dc696423",
+      "yazi1": "Overwatch®: Legendary Edition",
+      "yazi2": "",
+      "yazi3": "Team-Based Shooter",
+      "yazi4": " €39.99"
+    },
+    {
+      "id": 1,
+      "router": "StarCraftII",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FStarCraftII%2Fkutularsc1.jpg?alt=media&token=aa0250a3-7a9a-4894-8772-bf60101ff927",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FStarCraftII%2Fkutularsc2.svg?alt=media&token=b8f7e301-fddc-4257-b138-3c7a461ecae6",
+      "yazi1": "StarCraft® II: Campaign Collection",
+      "yazi2": "",
+      "yazi3": "Real-time Strategy",
+      "yazi4": " €39.99"
+    },
+    {
+      "id": 1,
+      "router": "StarCraft",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FStarCraft%2Fkutularhots1.jpg?alt=media&token=caad251d-fde7-40cb-9020-b9527ec30fab",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FStarCraft%2Fkutularhots2.svg?alt=media&token=1bdba1bf-0b6e-46c9-b13e-e0edeb46366a",
+      "yazi1": "Heroes of the Storm™",
+      "yazi2": "",
+      "yazi3": "MOBA",
+      "yazi4": "  Play For Free"
+    },
+    {
+      "id": 1,
+      "router": "DiabloII",
+      "arkafon": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FDiabloII%2Fkutulard31.jpg?alt=media&token=cacb3d9c-6591-4bfb-8a28-9373b0c5114d",
+      "simge": "https://firebasestorage.googleapis.com/v0/b/blizzardshop-c1285.appspot.com/o/kutular%2FDiabloII%2Fkutulard32.svg?alt=media&token=a1c0b698-9e6b-4c10-b474-8b647aca9452",
+      "yazi1": "Diablo® III: Eternal Collection",
+      "yazi2": "",
+      "yazi3": "Action RPG",
+      "yazi4": "  €39.99"
+    }
+  ]}
