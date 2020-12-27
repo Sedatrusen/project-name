@@ -55,7 +55,7 @@
           <b-form-input type="text"></b-form-input>
         </b-input-group>
       </b-nav-form>
-      <b-nav-item v-b-modal.modal-tall class="m-2 kalp">
+      <b-nav-item v-b-modal.modal-tall class="m-2 kalp" @click="isuser">
         <b-icon icon="heart-fill" aria-hidden="true" font-scale="1"></b-icon>
 
         Whislist
@@ -101,7 +101,13 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import { auth } from '../plugins/firebase'
 export default {
+  data() {
+    return {
+      logged: false,
+    }
+  },
   computed: {
     blizzardgames() {
       return this.$store.state.products.Products.filter(
@@ -120,9 +126,30 @@ export default {
     }),
   },
   created() {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        // User is signed in.
+        this.$store.dispatch('products/chechwhislist')
+        auth.currentUser.getIdToken(true)
+
+        this.loggedIn = true
+      } else {
+        // if (Cookies.set('access_token', 'blah')) {
+        // }
+        // No user is signed in.
+        this.loggedIn = false
+      }
+    })
     this.$store.dispatch('products/addproducts')
+    this.$store.dispatch('products/addoptions')
   },
+
   methods: {
+    isuser() {
+      if (auth.currentUser === null) {
+        this.$router.replace({ name: 'login' })
+      }
+    },
     ...mapActions('products', ['checkout']),
   },
 }

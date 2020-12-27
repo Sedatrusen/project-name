@@ -1,4 +1,4 @@
-import { DB } from '../plugins/firebase'
+import { auth, DB } from '../plugins/firebase'
 
 export const state = () => ({
   Products: [],
@@ -52,11 +52,27 @@ export const actions = {
     if (product) {
       const cartItem = state.whislist.find((item) => item.id === product)
       if (!cartItem) {
-        commit('pushProductToCart', product)
+        const userıd = auth.currentUser.uid
+        DB.ref('/baskets').child(userıd).push({
+          product,
+        })
+        // commit('pushProductToCart', product)
       }
     }
   },
+  chechwhislist({ commit }) {
+    const userıd = auth.currentUser.uid
+    DB.ref('/baskets')
+      .child(userıd)
+      .on('value', (snapshot) => {
+        commit('emptyCart')
+        snapshot.forEach((item) => {
+          commit('pushProductToCart', item.val().product)
+        })
+      })
+  },
   checkout({ commit }) {
+    DB.ref('/baskets').child(auth.currentUser.uid).remove()
     commit('emptyCart')
   },
   addproducts({ commit }) {

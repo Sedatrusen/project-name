@@ -7,6 +7,13 @@
         Let us verify some information about you to help set up your
         account.<router-link to="/">Learn why we need this. </router-link>
       </p>
+      <div v-if="error" class="../assets/emailout">
+        <p class="uyarı">
+          <b-icon icon="slash-circle" type="slash-circle"></b-icon>
+
+          {{ error.message }}
+        </p>
+      </div>
       <select v-model="selected">
         <option>Turkey</option>
         <option>USA</option>
@@ -19,7 +26,23 @@
           placeholder="Date of Birth(dd/mm/yyyy)"
         />
       </div>
-      <button @click="greet">Continue</button>
+      <div class="emailout">
+        <input
+          v-model="email"
+          class="tarih"
+          type="text"
+          placeholder="Email or Phone"
+        />
+      </div>
+      <div class="emailout">
+        <input
+          v-model="password"
+          class="tarih"
+          placeholder="Password"
+          type="password"
+        />
+      </div>
+      <button @click="tiklama(email, password)">Continue</button>
       <p class="yazi">OR SING UP WITH</p>
       <div class="emailout">
         <button class="sosyal" type="submit">
@@ -38,10 +61,27 @@
 </template>
 
 <script scoped>
+import { auth } from '../plugins/firebase'
 export default {
   layout: 'accountly',
   data() {
-    return { selected: 'Turkey' }
+    return { selected: 'Turkey', error: '', email: '', password: '' }
+  },
+  methods: {
+    tiklama(email, password) {
+      if (email == null && password == null) {
+        this.show = true
+      } else this.show = false
+
+      auth
+        .createUserWithEmailAndPassword(this.email, this.password)
+        .then((data) => {
+          this.$router.replace({ name: 'index' })
+        })
+        .catch((error) => {
+          this.error = error
+        })
+    },
   },
 }
 </script>
@@ -88,6 +128,9 @@ p {
   background-color: black;
   border: none;
   margin-top: 10px;
+}
+.uyarı {
+  color: red;
 }
 button {
   width: 400px;

@@ -210,7 +210,7 @@
       "price": 59.99
     },
     { "id": 16, "parentid": "StarCraft", "name": "Free To Play" },
-    { "id": 17," price": 9.99, "parentid": "DiabloII", "name": "Diablo II" },
+    { "id": 17,"price": 9.99, "parentid": "DiabloII", "name": "Diablo II" },
     {
       "id": 18,
       "parentid": "WarcraftIII",
@@ -239,7 +239,7 @@
       "name": "Standard Edition",
       "price": 59.99
     },
-    { "id": 22, "parentid": "CallofDuty:MW", "name": "Free For Everyone" },
+    { "id": null, "parentid": "CallofDuty:MW", "name": "Free For Everyone" },
     {
       "id": 23,
       "parentid": "CallofDuty:BO4",

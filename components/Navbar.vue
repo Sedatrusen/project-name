@@ -64,7 +64,7 @@
             offset="-175px"
             text="My Account"
           >
-            <b-dropdown-item v-if="loggedIn" to="/login"
+            <b-dropdown-item v-if="loggedIn" @click="logout"
               >Logout</b-dropdown-item
             >
             <b-dropdown-item v-else to="/login">Login</b-dropdown-item>
@@ -72,7 +72,10 @@
               ><b-icon class="navbaricon" icon="gear"></b-icon>Account
               Settings</b-dropdown-item
             >
-            <b-dropdown-item class="m-2" to="/newaccount"
+            <b-dropdown-item
+              v-if="loggedIn === false"
+              class="m-2"
+              to="/newaccount"
               ><b-icon class="navbaricon" icon="person-plus"></b-icon>Create a
               Free Account</b-dropdown-item
             >
