@@ -24,7 +24,12 @@ export default {
     ...mapState({ items: (state) => state.kutular.kutular }),
   },
   created() {
-    this.$store.dispatch('kutular/addkutular')
+    this.setKutular()
+  },
+  methods: {
+    setKutular() {
+      this.$store.dispatch('kutular/addkutular')
+    },
   },
 }
 </script>

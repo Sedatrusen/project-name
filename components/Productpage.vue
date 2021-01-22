@@ -75,18 +75,24 @@ export default {
     },
   },
   created() {
-    this.$store.dispatch('products/addproducts')
-    this.$store.dispatch('products/addoptions')
+    this.setProduct()
+    this.setOptions()
   },
   methods: {
     ...mapActions({
-      addProductToCart: 'products/addProductToCart',
+      addProductToCart: 'addProductToCart',
     }),
     select(itemid) {
       this.selecteditemid = itemid
     },
     focusMyElement() {
       this.$refs.focusThis.focus()
+    },
+    setProduct() {
+      this.$store.dispatch('products/addproducts')
+    },
+    setOptions() {
+      this.$store.dispatch('products/addoptions')
     },
   },
 }

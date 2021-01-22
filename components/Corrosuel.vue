@@ -39,7 +39,12 @@ export default {
     ...mapState({ items: (state) => state.carouselitems.carouselitems }),
   },
   created() {
-    this.$store.dispatch('carouselitems/addcarouselitems')
+    this.setItems()
+  },
+  methods: {
+    setItems() {
+      this.$store.dispatch('carouselitems/addcarouselitems')
+    },
   },
 }
 </script>
