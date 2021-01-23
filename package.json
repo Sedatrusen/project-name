@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "test": "jest --watch",
+    "test": "jest --watch --silent",
     "lint": "npm run lint:js && npm run lint:style",
     "dev": "nuxt",
     "generate": "nuxt generate",

@@ -78,7 +78,7 @@
             </li>
           </ul>
 
-          <p>Total : € {{ total }}</p>
+          <p class="total">Total : € {{ total }}</p>
           <b-button @click="checkout">Buy All</b-button>
         </b-modal>
       </b-nav-item>
@@ -129,7 +129,7 @@ export default {
     auth.onAuthStateChanged((user) => {
       if (user) {
         // User is signed in.
-        this.$store.dispatch('products/chechwhislist')
+        this.$store.dispatch('chechwhislist')
         auth.currentUser.getIdToken(true)
 
         this.loggedIn = true
@@ -140,8 +140,8 @@ export default {
         this.loggedIn = false
       }
     })
-    this.$store.dispatch('products/addproducts')
-    this.$store.dispatch('products/addoptions')
+    this.$store.dispatch('addproducts')
+    this.$store.dispatch('addoptions')
   },
 
   methods: {
