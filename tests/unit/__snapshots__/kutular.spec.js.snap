@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Kopru component korosel itemleri set etme 1`] = `
+exports[`Kutular component korosel itemleri set etme 1`] = `
 VueWrapper {
   "_emitted": Object {},
   "_emittedByOrder": Array [],

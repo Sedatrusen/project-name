@@ -1,12 +1,12 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
-import login from '@/pages/login.vue'
+import newaccount from '@/pages/newaccount.vue'
 
 const localVue = createLocalVue()
 
 localVue.use(Vuex)
 
-describe('Login sayfası', () => {
+describe('newaccount component', () => {
   let actions
   let store
   let getters
@@ -29,8 +29,8 @@ describe('Login sayfası', () => {
     })
   })
 
-  it('login sayfası çalışıyor', () => {
-    const wrapper = shallowMount(login, {
+  it('newaccount component set etme', () => {
+    const wrapper = shallowMount(newaccount, {
       computed: {
         blizzardgames: () => 'value_2',
         partnergames: () => '2',
@@ -42,13 +42,5 @@ describe('Login sayfası', () => {
     })
     expect(wrapper.exists()).toBe(true)
     expect(wrapper.html).toMatchSnapshot()
-  })
-  it('Cant log in? linki gözüküyor mu', () => {
-    const wrapper = shallowMount(login, {
-      localVue,
-      store,
-    })
-    const text = wrapper.find('.others')
-    expect(text.text()).toBe('Create a free Blizzard Accoun')
   })
 })

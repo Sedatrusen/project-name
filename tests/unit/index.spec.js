@@ -6,7 +6,7 @@ const localVue = createLocalVue()
 
 localVue.use(Vuex)
 
-describe('Newmenu component', () => {
+describe('index sayfası', () => {
   let actions
   let store
   let getters
@@ -24,7 +24,7 @@ describe('Newmenu component', () => {
     })
   })
 
-  it('menu itemleri set etme', () => {
+  it('index sayfası çalışıyor', () => {
     const wrapper = shallowMount(index, {
       localVue,
       store,

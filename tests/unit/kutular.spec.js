@@ -6,23 +6,26 @@ const localVue = createLocalVue()
 
 localVue.use(Vuex)
 
-describe('Kopru component', () => {
+describe('Kutular component', () => {
   let state
   let store
+  let actions
 
   beforeEach(() => {
     state = {
       kutular: jest.fn(),
     }
+    actions = {
+      addkutular: jest.fn(),
+    }
     store = new Vuex.Store({
       state,
+      actions,
     })
   })
 
   it('korosel itemleri set etme', () => {
     const wrapper = shallowMount(Corrosuel, {
-      mocks: { $route: { params: { id: 1 } } },
-
       localVue,
       store,
     })
