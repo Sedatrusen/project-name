@@ -129,7 +129,7 @@ export default {
     auth.onAuthStateChanged((user) => {
       if (user) {
         // User is signed in.
-        this.$store.dispatch('chechwhislist')
+        this.$store.dispatch('products/chechwhislist')
         auth.currentUser.getIdToken(true)
 
         this.loggedIn = true
@@ -140,8 +140,8 @@ export default {
         this.loggedIn = false
       }
     })
-    this.$store.dispatch('addproducts')
-    this.$store.dispatch('addoptions')
+    this.$store.dispatch('products/addproducts')
+    this.$store.dispatch('products/addoptions')
   },
 
   methods: {

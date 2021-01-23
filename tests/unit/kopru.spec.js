@@ -7,6 +7,6 @@ describe('Kopru component', () => {
       propsData: {},
     })
     expect(wrapper.exists()).toBe(true)
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapper.html.toString).toMatchSnapshot()
   })
 })
